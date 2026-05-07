@@ -447,13 +447,16 @@ export const data: TalentData = {
         icon: icons["inv_mace_01"],
         maxRank: 5,
         reqPoints: 15,
-        description: talentText`Causes your attacks to gain a bonus based on the weapon type you are using. ${[
-          1 / 120,
-          2 / 240,
-          3 / 360,
-          4 / 480,
-          5 / 600,
-        ]} Bonus critical strike chance with Axes, Fists and Daggers OR % chance to gain an extra attack with Swords / Armor penetration with Maces.`,
+        description: talentText`Causes your attacks to gain a bonus based on the weapon type you are using.
+
+Axes, Fists, Daggers:
+${["1", "2", "3", "4", "5"]}% increased critical strike chance.
+
+Swords:
+${["1", "2", "3", "4", "5"]}% chance to gain an extra attack.
+
+Maces:
+${["120", "240", "360", "480", "600"]} Armor penetration.`,
       },
       "Survivor": {
         name: "Survivor",
